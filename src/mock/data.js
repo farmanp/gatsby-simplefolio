@@ -18,10 +18,12 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  paragraphOne: `
+  My personal philosophy:`,
+  paragraphTwo: `Design and develop tools that empower people to solve problems in science and engineering,
+  democratize learning through open source solutions for improving accessibility and usability of technologies, and engineer empathy to be efficient and dignified.`,
+  paragraphThree: 'Enjoy!',
+  resume: 'https://resume.creddle.io/resume/6e1khl1lhm3', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -59,7 +61,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'farman.pirz@gmail.com',
 };
 
 // FOOTER DATA
@@ -67,23 +69,13 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/farmanp/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/farmanp',
     },
   ],
 };
