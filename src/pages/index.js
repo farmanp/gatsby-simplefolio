@@ -1,22 +1,18 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import App from '../components/App';
-import { headData } from '../mock/data';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/main.scss';
+import React from "react"
+import Navbar from "../components/navbar";
+import { theme } from "../style/theme";
 
-export default () => {
-  const { title, lang, description } = headData;
-
+const IndexPage = () => {
   return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{title || 'Gatsby Simplefolio'}</title>
-        <html lang={lang || 'en'} />
-        <meta name="description" content={description || 'Gatsby Simplefolio'} />
-      </Helmet>
-      <App />
-    </>
-  );
-};
+    <div style={{ backgroundColor: theme.colors.primary }}>
+      <Navbar />
+      <div style={{ padding: "96px" }}>
+        <h1 style={{ color: theme.colors.accent }}>Welcome to my portfolio!</h1>
+      </div>
+    </div>
+  )
+}
+
+export default IndexPage
+
+export const Head = () => <title>Home Page</title>
